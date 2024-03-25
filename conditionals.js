@@ -22,7 +22,14 @@ englishButton.addEventListener("click", function() {
     //  - The answer should be "Mon".
     //  - If the user enters the correct answer, use .innerHTML to display the word "Correct!" in the ".english-message" div. 
     //  - If incorrect, display "Wrong! Try again."
-    
+   let englishMessage = document.querySelector(".english-message");
+ if (englishInput === "Mon") {
+   // what happens if true
+   englishMessage. innerHTML = "Correct!"
+ } else {
+   // what happens if false
+    englishMessage. innerHTML = "Wrong! Try Again!"
+ }
 
 
 
@@ -41,6 +48,13 @@ mathButton.addEventListener("click", function() {
     //  - The answer should be 30.
     //  - If the user enters the correct answer, use .innerHTML to display the word "Yessss!" in the ".math-message" div. 
     //  - If incorrect, display "Wrong! Try again."
+  let mathMessage = document.querySelector (".math-message");
+  if (mathInput === 30) {
+    mathMessage. innerHTML = "Correct!"
+  } else { 
+    mathMessage. innerHTML = "Wrong! Try again!"
+    
+  }
     
 
 });
